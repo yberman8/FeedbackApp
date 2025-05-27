@@ -81,6 +81,7 @@ export default function server() {
       app.listen(process.env.PORT, () => {
          console.log(`Server is running on port ${process.env.PORT}`)
          console.log(`Frontend: http://localhost:${process.env.PORT_FRONTEND}`)
+         console.log(`Admin login: http://localhost:${process.env.PORT_FRONTEND}/login`)
          console.log(`Admin Panel: http://localhost:${process.env.PORT_FRONTEND}/admin`)
       });
 
