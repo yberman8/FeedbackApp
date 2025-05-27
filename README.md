@@ -1,4 +1,4 @@
-# FeedbacksApp
+# FeedbackApp
 
 A simple and lightweight feedback management system built with:
 
@@ -7,7 +7,7 @@ A simple and lightweight feedback management system built with:
 - 🗄️ **Database**: MongoDB (Mongoose)
 
 Users can submit feedback with a rating and message.  
-Admins can view, filter, and manage feedbacks via a clean and responsive dashboard.
+Admins can login, view, filter, and manage feedback via a clean and responsive dashboard.
 
 ---
 
@@ -16,7 +16,7 @@ Admins can view, filter, and manage feedbacks via a clean and responsive dashboa
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yberman8/FeedbacksApp.git
+git clone https://github.com/yberman8/FeedbackApp.git
 ```
 
 ---
@@ -72,7 +72,7 @@ node app.js
 - Submit feedback with name, rating (1–5), and message
 - Admin dashboard with search, filters, and statistics
 - Responsive design (Vuetify)
-- Demo admin user and 12 sample feedbacks auto-created on first run
+- Demo admin user and 12 sample feedback auto-created on first run
 
 ---
 
