@@ -1,75 +1,118 @@
 # FeedbacksApp
-Simple feedback management system built with Vue 3, Vuetify, Express, and MongoDB.
 
-A lightweight feedback management system built with:
-- 🖥️ Frontend: Vue 3 + Vuetify
-- 🌐 Backend: Node.js + Express
-- 🗄️ Database: MongoDB with Mongoose
+A simple and lightweight feedback management system built with:
 
-Users can submit feedback, and admins can view and manage submissions via a dedicated panel.
+- 🖥️ **Frontend**: Vue 3 + Vuetify 3 + Vite  
+- 🌐 **Backend**: Node.js + Express  
+- 🗄️ **Database**: MongoDB (Mongoose)
 
-## Getting Started
+Users can submit feedback with a rating and message.  
+Admins can view, filter, and manage feedbacks via a clean and responsive dashboard.
+
+---
+
+## 🚀 Getting Started
 
 ### 1. Clone the repository
 
+```bash
 git clone https://github.com/yberman8/FeedbacksApp.git
+```
 
-Frontend: 
+---
 
- Install dependencies
+### 2. Frontend Setup (`client`)
+
 ```bash
 cd client
 npm install
+```
 
-Create .env file
-VITE_BASE_URL="http://localhost:3000"
+Create a `.env` file in `client/`:
 
- Run the project:
+```env
+VITE_BASE_URL=http://localhost:3000
+```
+
+Run the frontend:
+
+```bash
 npm run dev
+```
 
+---
 
-Backend:
+### 3. Backend Setup (`server`)
 
+```bash
 cd server
 npm install
+```
 
-Create .env file
-VITE_BASE_URL="http://localhost:3000"
+Create a `.env` file in `server/`:
 
-SECRET_WORD="feedbackProjectDemo"
-PORT="3000"
-PORT_FRONTEND="5173"
-MONGODB_URI='mongodb://127.0.0.1:27017/simplefeedback'
+```env
+VITE_BASE_URL=http://localhost:3000
+SECRET_WORD=feedbackProjectDemo
+PORT=3000
+PORT_FRONTEND=5173
+MONGODB_URI=mongodb://127.0.0.1:27017/simplefeedback
+```
 
- Run the project:
+Run the backend:
+
+```bash
 node app.js
+```
 
-## Features
+---
 
-- ✅ Submit feedback with rating and message
-- ✅ Admin dashboard with filters and statistics
-- ✅ Responsive UI (Vuetify)
-- ✅ Sample admin + demo feedbacks generated on first run
+## ✅ Features
 
-## Demo Admin
+- Submit feedback with name, rating (1–5), and message
+- Admin dashboard with search, filters, and statistics
+- Responsive design (Vuetify)
+- Demo admin user and 12 sample feedbacks auto-created on first run
 
-**Email**: admin@example.com  
-**Password**: Admin1234
+---
 
+## 🔐 Demo Admin
 
-## Tech Stack
+```bash
+Email:    admin@example.com
+Password: Admin1234
+```
+
+---
+
+## 🧱 Tech Stack
 
 - Vue 3
 - Vuetify 3
 - Vite
 - Node.js
 - Express.js
-- MongoDB + Mongoose
+- MongoDB (Mongoose)
 
-## Screenshots
+---
 
+## 🖼️ Screenshots
+
+```md
 ![Feedback Form](screenshots/form.png)
-![Admin login](screenshots/login.png)
 ![Admin Panel](screenshots/admin.png)
+```
 
 
+---
+
+## 📄 License
+
+This project is open for demonstration and educational use.  
+You may reuse and modify it with credit to the author.
+
+---
+
+## 🙋‍♂️ Author
+
+Developed by [Yossi Berman](https://github.com/yberman8)
