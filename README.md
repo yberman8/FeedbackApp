@@ -98,11 +98,9 @@ Password: Admin1234
 
 ## 🖼️ Screenshots
 
-```md
 ![Feedback Form](screenshots/form.png)
 ![Admin Login](screenshots/login.png)
 ![Admin Panel](screenshots/admin.png)
-```
 
 
 ---
