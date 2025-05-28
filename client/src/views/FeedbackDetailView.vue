@@ -100,10 +100,6 @@
                             מחק משוב
                         </v-btn>
 
-                        <v-btn color="primary" @click="exportFeedback">
-                            <v-icon start>mdi-download</v-icon>
-                            ייצא
-                        </v-btn>
                     </v-card-actions>
                 </v-card>
             </v-col>
@@ -224,23 +220,6 @@ const confirmDelete = async () => {
         console.error('Error deleting feedback:', error)
     }
     deleteDialog.value = false
-}
-
-const exportFeedback = () => {
-    const data = {
-        name: feedback.value.name,
-        rating: feedback.value.rating,
-        message: feedback.value.message,
-        createdAt: feedback.value.createdAt
-    }
-
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
-    const url = URL.createObjectURL(blob)
-    const a = document.createElement('a')
-    a.href = url
-    a.download = `feedback-${feedback.value._id}.json`
-    a.click()
-    URL.revokeObjectURL(url)
 }
 
 onMounted(() => {
